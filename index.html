@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-    <title>Hello from Electron renderer!</title>
+    <title>JS Runner</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
-    <p id="info"></p>
+    <header>
+        <h1>Welcome to JS Runner</h1>
+    </header>
+    <div class="container">
+        <div class="container-input">
+            <textarea id="code" rows="10" cols="40"></textarea>
+            <button id="runButton" class="btn primary">Run</button>
+        </div>
+        <div class="vertical-divider"></div>
+        <div class="container-output">
+            <pre id="output"></pre>
+        </div>
+    </div>
 </body>
-<script src="./renderer.js"></script>
 
 </html>
