@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JS Runner</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' http://localhost:3000;">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to JS Runner</h1>
+    </header>
+    <div class="container">
+        <div class="container-input">
+            <textarea id="code" rows="10" cols="40"></textarea>
+            <button id="runButton" class="btn primary">Run</button>
+        </div>
+        <div class="vertical-divider"></div>
+        <div class="container-output">
+            <pre id="output"></pre>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
