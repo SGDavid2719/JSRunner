@@ -1,0 +1,21 @@
+{
+	"name": "jsrunner",
+	"version": "0.0.0",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SGDavid2719/JSRunner.git"
+	},
+	"author": "SGDavid",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/SGDavid2719/JSRunner/issues"
+	},
+	"homepage": "https://github.com/SGDavid2719/JSRunner#readme",
+	"devDependencies": {
+		"electron": "^31.3.1"
+	}
+}
