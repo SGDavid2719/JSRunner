@@ -39,6 +39,19 @@ function createWindow() {
 	});
 	// mainWindow.webContents.openDevTools();
 	mainWindow.loadFile("index.html");
+
+	mainWindow.webContents.session.webRequest.onHeadersReceived(
+		(details, callback) => {
+			callback({
+				responseHeaders: {
+					...details.responseHeaders,
+					"Content-Security-Policy": [
+						"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self' http://localhost:3000;",
+					],
+				},
+			});
+		}
+	);
 }
 
 app.on("ready", createWindow);
