@@ -17,5 +17,9 @@
 	"homepage": "https://github.com/SGDavid2719/JSRunner#readme",
 	"devDependencies": {
 		"electron": "^31.3.1"
+	},
+	"dependencies": {
+		"body-parser": "^1.20.2",
+		"express": "^4.19.2"
 	}
 }
